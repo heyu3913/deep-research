@@ -14,6 +14,7 @@
             <ConfigManager ref="configManagerRef" />
             <ColorModeButton />
             <LangSwitcher />
+         
           </div>
         </div>
 
@@ -31,12 +32,20 @@
             dzhng/deep-research
           </UButton>
         </i18n-t>
-
+        <UButton
+            class="!p-0"
+            variant="link"
+            href="https://dcn6cg9amuys.feishu.cn/wiki/YFXqwYxEripCsWkMCnOc0JVonzf"
+            target="_blank"
+          >
+            使用文档
+          </UButton>
         <ResearchForm
           :is-loading-feedback="!!feedbackRef?.isLoading"
           ref="formRef"
           @submit="generateFeedback"
         />
+
         <ResearchFeedback
           :is-loading-search="!!deepResearchRef?.isLoading"
           ref="feedbackRef"

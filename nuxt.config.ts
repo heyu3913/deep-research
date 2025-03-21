@@ -59,7 +59,12 @@ export default defineNuxtConfig({
   nitro: {
     compressPublicAssets: { brotli: true, gzip: true },
   },
-
+  ui: {
+    global: true,
+    icons: ['lucide'],
+    // 禁用 Google Fonts
+    fonts: false
+  },
   css: ['~/assets/css/main.css'],
   compatibilityDate: '2024-11-01',
   future: {
